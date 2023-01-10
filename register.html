@@ -1,0 +1,205 @@
+<div class="container">
+	<div class="row">
+        <div id="register-form" class="col-lg-6 col-lg-offset-3">
+            <div class="row">
+            	<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                
+               
+
+                
+                    <div>
+                        <h2 class="small-heading">Individual Registration</h2>
+                        
+                        <div class="contact-form col-sm-11 clearfix">
+                            
+                            <form action="registration.php" id="RegistrationForm" method="post">
+                               
+                                    <div class="form-group col-md-12">
+                                        <label>Your name</label>
+                                        <input id="name" class="form-control" name="name" placeholder="Your Name*" type="text" required>
+                                    </div> 
+                                    
+                                    <div class="form-group col-md-12">
+                                        <label>Your college</label>
+                                        <input name="college" class="form-control" placeholder="College*" type="text" required>
+                                    </div>
+                                    
+                                    <div class="checkbox col-md-12">
+                                        <label>
+                                          <input type="checkbox" value="1" name="ccsit"> I am a CCSIT Student
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-6">
+                                        <input name="email" class="form-control" placeholder="Email*" type="email" required>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-6">
+                                        <input name="phone" class="form-control" placeholder="Phone*" type="text" required>
+                                    </div>
+                                           
+                                               <!-- <div class="form-group col-md-12">
+                                                  <label for="exampleInputFile">File input</label>
+                                                  <input type="file" id="exampleInputFile">
+                                                  <p class="help-block">Example block-level help text here.</p>
+                                              </div>-->
+                                                
+                                    <div class="col-md-12 validate">
+                                        <label>Events to participate</label>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="technova" value="1" type="checkbox" data-price="200" onclick="updatePrice();"> Technova V3.0
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="web_design" value="1" type="checkbox" data-price="100" onclick="updatePrice();"> Webpreneur
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="gaming" value="1" type="checkbox" data-price="100" onclick="updatePrice();"> Gamen
+                                                    </label>
+                                                </div>
+
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="seminar" value="1" type="checkbox"> Seminar
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-sm-4">
+                                                
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="workshop" value="1" type="checkbox" data-price="250" onclick="updatePrice();"> Workshop
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="it_quiz" value="1" type="checkbox" data-price="100" onclick="updatePrice();"> X-Quiz Me
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="treasure_hunt" value="1" type="checkbox" data-price="100" onclick="updatePrice();"> Loot and Scoot
+                                                    </label>
+                                                </div>
+
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="open_forum" value="1" type="checkbox"> Open Forum
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-sm-4">
+                                            
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="spot_photography" value="1" type="checkbox" data-price="50" onclick="updatePrice();">Flash Me
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="paper_presentation" value="1" type="checkbox" data-price="150" onclick="updatePrice();"> Paptrus Prezento
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xs-12">
+                                        <label>Food and accomodation</label>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="accommodation" value="1" type="checkbox" data-price="40" onclick="updatePrice();"> I need accommodation
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="veg" value="1" type="checkbox"> I am vegetarian
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>Food/Day 2/16-03-2018</label><br/>
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="day_1_lunch" value="1" type="checkbox"> Lunch
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="day_1_dinner" value="1" type="checkbox"> Dinner
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Food/Day 3/17-03-2018</label><br/>
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="day_2_bf" value="1" type="checkbox"> Breakfast
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="day_2_lunch" value="1" type="checkbox"> Lunch
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                      <input name="day_2_dinner" value="1" type="checkbox"> Dinner
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  <!--   <div class="col-xs-12">
+                                        <h2>Total: ₹<span id="total">0</span></h2>
+                                    <br/>
+                                    <br/> -->
+                                    <br/>
+                                    
+                                    
+                                    <div class="col-xs-12">
+                                        <h5>*Please bring your college ID card and a passport size photo while attending the program</h5>
+                                        <h5>*All the students, who registered for the workshop,will be provided with food</h5>
+                                    </div>
+                                    
+                                    <div class="col-xs-12">
+                                        <button class="submit active" >Register</button>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    </div>
+                            </form> 
+                        </div>
+                    </div>
+            
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+      
+    
